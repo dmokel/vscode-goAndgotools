@@ -507,6 +507,7 @@
 	"go.vetFlags": [],
 	"go.vetOnSave": "package",
 	"[go]": {
+		"editor.defaultFormatter": "golang.go",
 		"editor.formatOnSave": true,
 		"editor.codeActionsOnSave": {
 			"source.organizeImports": true
@@ -638,7 +639,7 @@
 
 	"prettier.arrowParens": "always", //当箭头函数仅有一个参数时加上括号
 	"prettier.bracketSpacing": true, //控制对象字面量的空格输出
-	"prettier.disableLanguages": [".go"], //用于禁用此扩展的语言ID列表
+	"prettier.disableLanguages": [".go", "go", "Go", "golang"], //用于禁用此扩展的语言ID列表
 	"prettier.embeddedLanguageFormatting": "auto", //控制是否将更漂亮的格式引用代码嵌入到文件中。
 	"prettier.enable": true, //控制是否启用prettier。
 	"prettier.endOfLine": "crlf",
