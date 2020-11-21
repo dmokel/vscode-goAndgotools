@@ -78,7 +78,7 @@ Here are some additional resources for learning about how to set up your Go proj
 **NOTE: If you are using modules, we recommend using the Go [language server](#language-server), which is explained below.**
 
 ```
-**注意:如果您正在使用模块，我们建议使用Go [language server](#language-server)，它将在下面解释。**
+**注意:如果您正在使用Modules，我们建议使用Go [language server](#language-server)，它将在下面解释。**
 ```
 
 More advanced users may be interested in using different `GOPATH`s or Go versions per-project. You can learn about the different `GOPATH` manipulation options in the [`GOPATH` documentation](https://github.com/golang/vscode-go/blob/master/docs/gopath.md). Take a look at the other [customization](#customization) options as well.
@@ -135,47 +135,111 @@ Be sure to learn more about the many [features](#features) of this extension, as
 
 [Go modules](https://blog.golang.org/using-go-modules) have added a lot of complexity to the way that most tools and features are built for Go. Some, but not all, [features](https://github.com/golang/vscode-go/blob/master/docs/features.md) of this extension have been updated to work with Go modules. Some features may also be slower in module mode. The [features documentation](https://github.com/golang/vscode-go/blob/master/docs/features.md) contains more specific details.
 
+```
+[Go modules](https://blog.golang.org/using-go modules)给大多数为Go构建的工具和特性增加了很多复杂性。该扩展的一些(但不是全部)[特性](https://github.com/golang/vscode-go/blob/master/docs/features.md)已经被更新为了与Go Modules一起工作。在Module模式下，一些特性可能也会慢一些。[特性文档](https://github.com/golang/vscode-go/blob/master/docs/features.md)包含更具体的细节。
+```
+
 **In general, we recommend using [`gopls`, the official Go language server](https://golang.org/s/gopls), if you are using modules.** Read more [below](#language-server) and in the [`gopls` documentation](https://github.com/golang/vscode-go/blob/master/docs/gopls.md).
+
+```
+一般来说，如果您使用的是模块，我们建议使用[' gopls '，官方Go语言服务器](https://golang.org/s/gopls)。更多信息请阅读[下面](# languageserver)和[' gopls '文档](https://github.com/golang/vscode-go/blob/master/docs/gopls.md)。
+```
 
 ## [Features](https://github.com/golang/vscode-go/blob/master/docs/features.md)
 
 This extension has a wide range of features, including [Intellisense](https://github.com/golang/vscode-go/blob/master/docs/features.md#intellisense), [code navigation](https://github.com/golang/vscode-go/blob/master/docs/features.md#code-navigation), and [code editing](https://github.com/golang/vscode-go/blob/master/docs/features.md#code-editing) support. It also shows build, vet, and lint [diagnostics](https://github.com/golang/vscode-go/blob/master/docs/features.md#diagnostics) as you work and provides enhanced support for [testing](https://github.com/golang/vscode-go/blob/master/docs/features.md##run-and-test-in-the-editor) and [debugging](#debugging) your programs. For more detail, see the [full feature breakdown](https://github.com/golang/vscode-go/blob/master/docs/features.md).
 
+```
+此扩展具有广泛的功能，包括[智能感知],[代码导航]和[代码编辑]支持。它还在会在您工作室显示build、vet和lint diagnostics，并且为[测试]和[调试]您的程序时提供了增强的支持。有关详细信息，请参阅[完整功能分解]
+```
+
 In addition to integrated editing features, the extension also provides several commands for working with Go files. You can access any of these by opening the Command Palette (Ctrl+Shift+P) and typing in the name of the command. See the [full list of commands](https://github.com/golang/vscode-go/blob/master/docs/commands.md#detailed-list) provided by the extension.
 
+```
+除了集成的编辑功能外，该扩展还提供了几个用于处理Go文件的命令。您可以通过打开命令面板(Ctrl+Shift+P)并输入命令的名称来访问其中任何一个选项。查看扩展提供的[完整命令列表](https://github.com/golang/vscode-go/blob/master/docs/commands.md#detailed-list)。
+```
+
 The majority of the extension's functionality comes from command-line tools. If you're experiencing an issue with a specific feature, you may want to investigate the underlying tool. You can do this by taking a look at the [full list of tools used by this extension](https://github.com/golang/vscode-go/blob/master/docs/tools.md).
+
+```
+该扩展的大部分功能来自命令行工具。如果遇到某个特定特性的问题，可能需要研究底层工具。您可以通过查看[此扩展使用的完整工具列表](https://github.com/golang/vscode-go/blob/master/docs/tools.md)来实现这一点。
+```
 
 ### [Debugging](https://github.com/golang/vscode-go/blob/master/docs/debugging.md)
 
 Debugging is a major feature offered by this extension. For a comprehensive overview of how to debug your Go programs, please see the [debugging guide](https://github.com/golang/vscode-go/blob/master/docs/debugging.md).
 
+```
+调试是该扩展提供的主要特性。有关如何调试Go程序的全面概述，请参阅[调试指南](https://github.com/golang/vscodego/blob/master/docs/debugging.md)。
+```
+
 ## Customization
 
 This extension needs no configuration; it works out of the box. However, you may wish to modify settings to adjust your experience.
 
+```
+这个扩展不需要配置;它是开箱即用的。但是，您可能希望修改设置来调整您的体验。
+```
+
 Many of the features are configurable to your preference. A few common modifications are mentioned below, but take a look at the [full list of settings](https://github.com/golang/vscode-go/blob/master/docs/settings.md) for an overview.
+
+```
+许多特性都可以根据您的喜好进行配置。下面提到了一些常见的修改，但是请查看[完整的设置列表](https://github.com/golang/vscode-go/blob/master/docs/settings.md)以获得概述。
+```
 
 ### [Linter](https://github.com/golang/vscode-go/blob/master/docs/tools.md#diagnostics)
 
 A commonly customized feature is the linter, which is a tool used to provide coding style feedback and suggestions. By default, this extension uses the official [`golint`].
 
+```
+一个常见的定制特性是linter，它是一种用于提供编码风格反馈和建议的工具。默认情况下，此扩展使用官方的[' golint ']。
+```
+
 However, you are welcome to use more advanced options like [`staticcheck`](https://pkg.go.dev/honnef.co/go/tools/staticcheck?tab=overview), [`golangci-lint`](https://golangci-lint.run/), or [`revive`](https://pkg.go.dev/github.com/mgechev/revive?tab=overview). This can be configured via the [`"go.lintTool"`](https://github.com/golang/vscode-go/blob/master/docs/settings.md#go.lintTool) setting, and the different options are explained more thoroughly in the [list of diagnostic tools](https://github.com/golang/vscode-go/blob/master/docs/tools.md#diagnostics).
+
+```
+但是，欢迎您使用更高级的选项，如[' staticcheck '](https://pkg.go.dev/honnef.co/go/tools/staticcheck?tab=overview)， [' golangci-lint '](https://golangci-lint.run/)，或[' revive?](https://pkg.go.dev/github.com/mgechev/revive?tab=overview)。这可以通过[' "go.lintTool" '](https://github.com/golang/vscode-go/blob/master/docs/settings.md#go.lintTool)设置配置，不同的选项在[list of diagnostic tools](https://github.com/golang/vscode-go/blob/master/docs/tools.md#diagnostics)中有更详细的解释。
+```
 
 ### [GOPATH](https://github.com/golang/vscode-go/blob/master/docs/gopath.md)
 
 Advanced users may want to set different `GOPATH`s for different projects or install the Go tools to a different `GOPATH`. This is possible and explained in the [`GOPATH documentation`](https://github.com/golang/vscode-go/blob/master/docs/gopath.md).
 
+```
+高级用户可能想为不同的项目设置不同的‘GOPATH’，或者将Go工具安装到不同的‘GOPATH’。这是可能的，在[' GOPATH documentation'](https://github.com/golang/vscode- go/blob/master/docs/g病理.md)中有解释。
+```
+
 ## [Language Server](https://github.com/golang/vscode-go/blob/master/docs/gopls.md)
 
 In the default mode, the Go extension relies upon a suite of [command-line tools](https://github.com/golang/vscode-go/blob/master/docs/tools.md). A new alternative is to use a [single language server](https://langserver.org/), which provides language features through the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/).
 
+```
+在默认模式下，Go扩展依赖于一套[命令行工具](https://github.com/golang/vscode-go/blob/master/docs/tools.md)。一种新的选择是使用一个[单一语言服务器](https://langserver.org/)，它通过[语言服务器协议](https://microsoft.github.io/languageageserver-protocol/)提供语言特性。
+```
+
 The Go team at Google has developed [`gopls`](https://github.com/golang/vscode-go/blob/master/docs/gopls.md), which is the official Go language server. It is currently in an alpha state and under active development.
+
+```
+谷歌的Go团队开发了[' gopls '](https://github.com/golang/vscode-go/blob/master/docs/gopls.md)，这是官方的go语言服务器。它目前处于alpha状态，正在积极开发中。
+```
 
 [`gopls`] is recommended for projects that use Go modules.
 
+```
+[' gopls ']推荐用于使用Go Modules的项目。
+```
+
 To opt-in to the language server, set [`"go.useLanguageServer"`](https://github.com/golang/vscode-go/blob/master/docs/settings.md#go.useLanguageServer) to `true` in your settings. You should then be prompted to install [`gopls`]. If you are not prompted, you can install `gopls` manually by running the [`Go: Install/Update Tools`](https://github.com/golang/vscode-go/blob/master/docs/commands.md#go-installupdate-tools) command and selecting `gopls`.
 
+```
+要选择进入语言服务器，将[' "go.useLanguageServer" '](https://github.com/golang/vscode-go/blob/master/docs/settings.md#go.useLanguageServer)设置为true。然后系统会提示你安装[' gopls ']。如果没有提示，可以通过运行[' Go: install /Update Tools '](https://github.com/golang/vscode-go/blob/master/docs/commands.md# Go -installupdate-tools)命令并选择' gopls '手动安装' gopls '。
+```
+
 For more information, see the [`gopls` documentation](https://github.com/golang/vscode-go/blob/master/docs/gopls.md).
+
+```
+更多信息，请参见[' gopls '文档](https://github.com/golang/vscode-go/blob/master/docs/gopls.md)。
+```
 
 ## Ask for help
 

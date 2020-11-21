@@ -49,7 +49,7 @@ gopls是官方的Go语言服务器。随着语言的发展，使用gopls将使VS
 To start using the language server, set "go.useLanguageServer": true in your VS Code Go settings.
 ```
 
-要开始使用语言服务器，请在VS代码Go设置`"go.useLanguageServer": true,`
+要开始使用语言服务器，请在VSCode Go设置`"go.useLanguageServer": true,`
 
 ```
 You should see a prompt to install gopls. If you do not see a prompt, please run the Go: Install/Update Tools command and select gopls.

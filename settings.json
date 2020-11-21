@@ -1,0 +1,729 @@
+{
+	//
+	//
+	//edit
+	//
+	//
+
+	"editor.accessibilityPageSize": 14, //控制编辑器中可由屏幕阅读器读取的行数。警告: 对于大于默认值(14)的数字，这会影响性能
+	"editor.autoClosingBrackets": "languageDefined",
+	"editor.autoClosingOvertype": "auto",
+	"editor.autoClosingQuotes": "languageDefined",
+	"editor.autoIndent": "full",
+	"editor.autoSurround": "languageDefined",
+	"editor.codeActionsOnSave": {},
+	"editor.codeLens": true,
+	"editor.fastScrollSensitivity": 5,
+	"editor.lineNumbers": "on",
+	"editor.renameOnType": true, //控制是否在编辑器中输入时自动重命名。
+	"editor.tabSize": 2,
+	"editor.wordWrap": "on",
+	"editor.wordWrapColumn": 80,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.columnSelection": false,
+
+	//
+	//光标
+
+	"editor.cursorBlinking": "blink",
+	"editor.cursorWidth": 3,
+	"editor.cursorStyle": "line",
+	"editor.cursorSmoothCaretAnimation": true,
+
+	//
+	//查找
+
+	"editor.find.addExtraSpaceOnTop": true,
+	"editor.find.autoFindInSelection": "multiline",
+
+	//
+	//字体
+
+	"editor.fontFamily": "Consolas, 'Courier New', monospace", //默认
+	"editor.fontLigatures": true,
+	"editor.fontSize": 16, //控制字体大小(像素)。
+	"editor.fontWeight": "normal",
+
+	//
+	//正在格式化
+
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true, //在保存时格式化文件。格式化程序必须可用，延迟后文件不能保存，并且编辑器不能关闭。
+	"editor.formatOnSaveMode": "file", //控制在保存时设置格式是设置整个文件格式还是仅设置修改内容的格式。仅当 "#editor.formatOnSave#" 为 "true" 时应用。file: 设置整个文件的格式。
+	"editor.formatOnType": true, //控制编辑器在键入一行后是否自动格式化该行。
+
+	//
+	//差异编辑器
+
+	"diffEditor.codeLens": true, //控制是否在编辑器中显示 CodeLens。
+	"diffEditor.ignoreTrimWhitespace": false, //启用后，差异编辑器将忽略前导空格或尾随空格中的更改。
+	"diffEditor.maxComputationTime": 5000,
+	"diffEditor.renderIndicators": true,
+	"diffEditor.renderSideBySide": true,
+
+	//
+	//缩略图
+
+	"editor.minimap.enabled": true,
+	"editor.minimap.maxColumn": 120,
+	"editor.minimap.renderCharacters": true,
+	"editor.minimap.scale": 1,
+	"editor.minimap.showSlider": "mouseover",
+	"editor.minimap.side": "right",
+	"editor.minimap.size": "proportional",
+
+	//
+	//建议
+
+	"editor.acceptSuggestionOnCommitCharacter": true,
+	"editor.acceptSuggestionOnEnter": "on",
+	"editor.quickSuggestions": true, //控制是否在键入时自动显示建议。
+	"editor.quickSuggestionsDelay": 1, //控制显示快速建议前的等待时间 (毫秒)。
+	"editor.snippetSuggestions": "inline", //控制代码片段是否与其他建议一起显示及其排列的位置。inline: 在其他建议中穿插显示代码片段建议。
+	"editor.suggest.filterGraceful": true,
+	"editor.suggest.insertMode": "insert", //控制接受补全时是否覆盖单词。请注意，这取决于扩展选择使用此功能。insert: 插入建议而不覆盖光标右侧的文本。
+	"editor.suggest.localityBonus": true,
+	"editor.suggest.shareSuggestSelections": true, //控制是否在多个工作区和窗口间共享记忆的建议选项(需要 #editor.suggestSelection#)。
+	"editor.suggest.showClasses": true,
+	"editor.suggest.showStatusBar": true,
+	"editor.suggestOnTriggerCharacters": true,
+	"editor.wordBasedSuggestions": true, //控制是否根据文档中的文字计算自动完成列表。
+
+	//
+	//文件
+
+	"files.associations": {
+		//配置语言的文件关联 (如: "*.extension": "html")。这些关联的优先级高于已安装语言的默认关联。
+	},
+	"files.autoSave": "afterDelay", //控制自动保存未保存的编辑器。有关自动保存的详细信息，请参阅此处。afterDelay: 将在配置的 "#files.autoSaveDelay#" 后自动保存未保存的编辑器。
+	"files.autoSaveDelay": 1000, //"files.autoSaveDelay": 1000：默认设置，会自动隐藏
+	"files.defaultLanguage": "",
+	"files.enableTrash": true,
+	"files.encoding": "utf8",
+	"files.eol": "auto",
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true
+	},
+	"files.hotExit": "onExit",
+	"files.insertFinalNewline": true,
+	"files.maxMemoryForLargeFilesMB": 4096,
+	"files.participants.timeout": 5000,
+	"files.restoreUndoStack": true,
+	"files.saveConflictResolution": "askUser",
+	"files.simpleDialog.enable": false, //启用简单文件对话框。启用时，简单文件对话框将替换系统文件对话框。
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	"files.watcherExclude": {
+		"**/.git/objects/**": true,
+		"**/.git/subtree-cache/**": true,
+		"**/node_modules/*/**": true,
+		"**/.hg/store/**": true
+	},
+
+	//
+	//
+	//workbench
+	//
+	//
+	//
+
+	"workbench.commandPalette.history": 50,
+	"workbench.list.keyboardNavigation": "highlight",
+	"workbench.list.multiSelectModifier": "ctrlCmd",
+	"workbench.list.openMode": "singleClick",
+	"workbench.list.smoothScrolling": true,
+	"workbench.panel.defaultLocation": "bottom", //控制面板的默认位置(终端、调试控制台、输出、问题)。它可以显示在工作台的底部、右侧或左侧。
+	"workbench.panel.opensMaximized": "preserve", //控制面板是否以最大化方式打开。它可以始终以最大化方式打开、永不以最大化方式打开或以关闭前的最后一个状态打开。preserve: 以关闭面板前的状态打开面板。
+	"workbench.productIconTheme": "Default", //指定使用的产品图标主题。Default: 默认
+
+	"workbench.startupEditor": "none",
+
+	//
+	//外观
+
+	"workbench.activityBar.iconClickBehavior": "toggle",
+	"workbench.activityBar.visible": true,
+	"workbench.colorCustomizations": {}, //指定用在工作台中的颜色主题。
+	"workbench.colorTheme": "Default Dark+",
+	"workbench.iconTheme": "vscode-icons", //指定工作台中使用的文件图标主题；若指定为 "null"，则不显示任何文件图标。
+	"workbench.sideBar.location": "left",
+	"workbench.statusBar.visible": true,
+	"workbench.tips.enabled": true,
+	"workbench.tree.indent": 8,
+	"workbench.tree.renderIndentGuides": "always",
+	"workbench.view.alwaysShowHeaderActions": false,
+
+	//
+	//导航路径
+
+	"breadcrumbs.enabled": true,
+	"breadcrumbs.filePath": "on",
+	"breadcrumbs.icons": true,
+	"breadcrumbs.showArrays": true,
+	"breadcrumbs.symbolPath": "on",
+	"breadcrumbs.symbolSortOrder": "position",
+
+	//
+	//编辑管理
+
+	"workbench.editor.labelFormat": "default", //控制编辑器标签的格式。default: 显示文件名。当启用选项卡且在同一组内有两个相同名称的文件时，将添加每个文件路径中可以用于区分的部分。在选项卡被禁用且编辑器活动时，将显示相对于工作区文件夹的路径。
+	"workbench.editor.limit.enabled": true,
+	"workbench.editor.limit.perEditorGroup": true,
+	"workbench.editor.limit.value": 10,
+	"workbench.editor.openPositioning": "right",
+	"workbench.editor.scrollToSwitchTabs": false,
+	"workbench.editor.showTabs": true,
+	"workbench.editor.splitSizing": "distribute",
+	"workbench.editor.tabCloseButton": "right",
+	"workbench.editor.tabSizing": "fit",
+	"workbench.editor.titleScrollbarSizing": "default",
+
+	//
+	//设置编辑器
+
+	"workbench.settings.editor": "ui",
+	"workbench.settings.enableNaturalLanguageSearch": true,
+	"workbench.settings.settingsSearchTocBehavior": "filter",
+	"workbench.settings.useSplitJSON": false,
+
+	//
+	//禅模式
+
+	"zenMode.centerLayout": true,
+	"zenMode.restore": false,
+
+	//
+	//截屏模式
+
+	"screencastMode.fontSize": 56,
+	"screencastMode.verticalOffset": 20,
+
+	//
+	//
+	//窗口
+	//
+	//
+
+	"window.autoDetectColorScheme": false,
+	"window.customMenuBarAltFocus": true,
+	"window.dialogStyle": "native",
+	"window.menuBarVisibility": "default",
+	"window.restoreWindows": "none",
+	"window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName}",
+	"window.titleBarStyle": "custom",
+	"window.zoomLevel": 0,
+
+	//
+	//新建窗口
+
+	"window.newWindowDimensions": "default",
+	"window.openFilesInNewWindow": "off",
+
+	//
+	//
+	//功能
+	//
+	//
+	//
+	//资源管理器
+
+	"explorer.autoReveal": true,
+	"explorer.compactFolders": false,
+	"explorer.incrementalNaming": "simple",
+	"explorer.openEditors.visible": 0,
+	"explorer.sortOrder": "default",
+	"outline.icons": true,
+
+	//
+	//搜索
+
+	"search.actionsPosition": "auto",
+	"search.collapseResults": "alwaysExpand",
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/bower_components": true,
+		"**/*.code-search": true
+	},
+	"search.followSymlinks": true,
+	"search.maintainFileSearchCache": false,
+	"search.quickOpen.history.filterSortOrder": "default",
+	"search.searchEditor.doubleClickBehaviour": "goToLocation",
+
+	//
+	//调试
+
+	"debug.allowBreakpointsEverywhere": false,
+	"debug.console.fontSize": 16,
+	"debug.console.historySuggestions": true,
+	"debug.console.lineHeight": 0,
+
+	//
+	//终端
+
+	"terminal.external.windowsExec": "C:\\WINDOWS\\System32\\cmd.exe",
+	"terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe", //终端在 Windows 上使用的 shell 的路径(默认: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe)。
+	"terminal.integrated.fontSize": 16, //控制终端的字号(以像素为单位)。
+
+	//
+	//
+	//应用程序
+	//
+	//
+	//
+	//更新
+
+	"update.enableWindowsBackgroundUpdates": true,
+
+	//
+	//
+	//扩展
+	//
+	//
+	//合并冲突
+
+	"merge-conflict.diffViewPosition": "Current",
+
+	//
+	//"auto-close-tag
+
+	"auto-close-tag.activationOnLanguage": [
+		"xml",
+		"php",
+		"blade",
+		"ejs",
+		"jinja",
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact",
+		"plaintext",
+		"markdown",
+		"vue",
+		"liquid",
+		"erb",
+		"lang-cfml",
+		"cfml",
+		"HTML (EEx)",
+		"HTML (Eex)",
+		"plist"
+	],
+	"auto-close-tag.disableOnLanguage": ["php"],
+	"auto-close-tag.enableAutoCloseSelfClosingTag": true,
+	"auto-close-tag.enableAutoCloseTag": true,
+	"auto-close-tag.excludedTags": [
+		"area",
+		"base",
+		"br",
+		"col",
+		"command",
+		"embed",
+		"hr",
+		"img",
+		"input",
+		"keygen",
+		"link",
+		"meta",
+		"param",
+		"source",
+		"track",
+		"wbr"
+	],
+	"auto-close-tag.fullMode": true,
+	"auto-close-tag.SublimeText3Mode": true,
+
+	//
+	//auto-rename-tag
+
+	"auto-rename-tag.activationOnLanguage": ["*"],
+
+	//
+	//bracket-pair-colorizer
+
+	"bracket-pair-colorizer-2.colorMode": "Consecutive",
+	"bracket-pair-colorizer-2.colors": ["Gold", "Orchid", "LightSkyBlue"],
+	"bracket-pair-colorizer-2.excludedLanguages": [],
+
+	//
+	//css
+
+	"css.completion.completePropertyWithSemicolon": true,
+
+	//
+	//css settings
+
+	"css.fileExtensions": ["css", "scss"],
+	"css.remoteStyleSheets": [],
+
+	//
+	//emmet
+
+	"emmet.excludeLanguages": ["markdown"],
+
+	//
+	//ES6 reactReduxSnippets
+
+	"reactReduxSnippets.LinterRules": "Loose",
+
+	//
+	//eslint
+
+	"eslint.alwaysShowStatus": false,
+	"eslint.packageManager": "npm",
+
+	//
+	//git
+
+	"git.allowForcePush": false,
+	"git.autorefresh": true,
+	"git.autoRepositoryDetection": true,
+	"git.enabled": true,
+	"git.terminalAuthentication": false,
+
+	//
+	//github
+
+	"github.gitAuthentication": false,
+
+	//
+	//go
+
+	"go.addTags": {
+		"tags": "json",
+		"options": "json=omitempty",
+		"promptForTags": false,
+		"transform": "snakecase"
+	},
+	// "go.alternateTools": {},
+	"go.autocompleteUnimportedPackages": true,
+	// "go.buildFlags": [],
+	"go.buildOnSave": "package",
+	// "go.buildTags": "",
+	"go.coverageDecorator": {
+		"type": "highlight",
+		"coveredHighlightColor": "rgba(64,128,128,0.5)",
+		"uncoveredHighlightColor": "rgba(128,64,64,0.25)",
+		"coveredBorderColor": "rgba(64,128,128,0.5)",
+		"uncoveredBorderColor": "rgba(128,64,64,0.25)",
+		"coveredGutterStyle": "blockblue",
+		"uncoveredGutterStyle": "slashyellow"
+	},
+	"go.coverageOptions": "showBothCoveredAndUncoveredCode",
+	"go.coverMode": "default", //在生成代码覆盖时，-covermode的值。'default'是'go test'命令选择的默认值。
+	"go.coverOnSave": false,
+	"go.coverOnSingleTest": false,
+	"go.coverOnSingleTestFile": false,
+	"go.coverOnTestPackage": true,
+	"go.coverShowCounts": false,
+	"go.delveConfig": {
+		//深入设置，适用于所有调试会话。启动中的调试配置。json文件将覆盖这些值。
+		"dlvLoadConfig": {
+			"followPointers": true,
+			"maxVariableRecurse": 1,
+			"maxStringLen": 64,
+			"maxArrayValues": 64,
+			"maxStructFields": -1
+		},
+		"apiVersion": 2,
+		"showGlobalVariables": false
+	},
+	"go.docsTool": "godoc", //选择'godoc'或'gogetdoc'来获取文档。在使用语言服务器时不适用。
+	"go.editorContextMenuCommands": {
+		//实验特性:从编辑器的上下文菜单中启用/禁用条目。
+		"toggleTestFile": true,
+		"addTags": true,
+		"removeTags": false,
+		"testAtCursor": true,
+		"testFile": false,
+		"testPackage": false,
+		"generateTestForFunction": true,
+		"generateTestForFile": false,
+		"generateTestForPackage": false,
+		"addImport": true,
+		"testCoverage": true,
+		"playground": true,
+		"debugTestAtCursor": true
+	},
+	"go.enableCodeLens": {
+		//特性级别设置，以启用/禁用用于引用和运行/调试测试的代码镜头
+		"references": false,
+		"runtest": true
+	},
+	"go.formatFlags": [],
+	"go.formatTool": "goimports", //在使用语言服务器时不适用。选择“goimport”、“goreturns”或“gofumports”将添加丢失的导入并删除未使用的导入。
+	"go.generateTestsFlags": [],
+	"go.gocodeAutoBuild": true, //启用gocode的自动构建功能。在使用语言服务器时不适用。
+	"go.gocodeFlags": ["-builtin", "-ignore-case", "-unimported-packages"],
+	// "go.gocodePackageLookupMode": "go", //用于确定gocode完成的Go包查找规则。仅适用于使用nsf/gocode。最新版本的Go扩展默认使用mdempsky/gocode。在使用语言服务器时不适用。
+	"go.gopath": "F:\\Go", //已同步
+	"go.goroot": "D:\\Go", //已同步
+	"go.gotoSymbol.ignoreFolders": [],
+	"go.gotoSymbol.includeGoroot": false, //如果为false，则在使用文件中的Go to符号特性时将排除位于$GOROOT的标准库
+	"go.gotoSymbol.includeImports": false, //如果为false，则在使用文件中的Go to符号特性时将排除import语句
+	"go.inferGopath": false, //从工作区根中推断GOPATH。
+	"go.installDependenciesWhenBuilding": false, //如果为真，那么每当编译代码时，' -i '标志将被传递给' go build '。由于Go 1.10，除非您处于GOPATH模式并且不使用语言服务器，否则可能没有必要设置此设置。
+	"go.languageServerExperimentalFeatures": {
+		//使用此设置来启用/禁用语言服务器上的实验特性。
+		"diagnostics": true, //如果为真，语言服务器将提供构建、检查错误，扩展将忽略' buildOnSave '、' vetOnSave '设置。
+		"documentLink": true //如果为真，语言服务器将为导入语句提供可点击的Godoc链接。
+	},
+	"go.languageServerFlags": [
+		"-rpc.trace", // for more detailed debug logging更详细的调试日志
+		"serve",
+		"--debug=localhost:6060" // 要调查内存使用情况，请参阅配置文件
+	],
+	"go.lintFlags": [], //传递给Lint工具的标志(例如["-min_confidence=.8"])
+	"go.lintOnSave": "package", //使用配置的Lint工具对文件保存进行Lint代码处理。选项有“file”、“package”、“workspace”或“off”。
+	"go.lintTool": "golint", //指定棉线工具名称。。
+	"go.liveErrors": {
+		//对当前正在编辑的文件使用gotype，并在配置延迟后报告发现的任何语义或语法错误。
+		"enabled": true, //如果为真，则对当前正在编辑的文件运行gotype，并报告发现的任何语义或语法错误。
+		"delay": 500 //执行前延迟的毫秒数。每次击键重置。
+	},
+	"go.logging.level": "error",
+	// "go.overwriteGoplsMiddleware": {}, //这个选项提供了一组标志，用于确定vscode-go是否应该从gopls拦截某些命令。这些标志假设“gopls”在，设置也存该设置启用了来自gopls的代码。
+	"go.playground": {
+		//这里配置的标志将传递到命令' goplay '
+		"openbrowser": true,
+		"share": true,
+		"run": true
+	},
+	// "go.testEnvFile": null, //包含环境变量定义的文件的绝对路径。文件内容的形式应该是key=value。
+	"go.testEnvVars": {}, //将传递给运行Go test的进程的环境变量
+	"go.testFlags": null,
+	"go.testOnSave": false,
+	"go.testTags": null,
+	"go.testTimeout": "30s", //以ParseDuration格式指定go test的超时。
+	"go.toolsEnvVars": {}, //将传递给运行Go工具的进程的环境变量(例如CGO_CFLAGS)
+	// "go.toolsGopath": "D:\\Go\\toolsbin", //如果不希望在GOPATH中安装扩展依赖的Go工具的位置。
+	"go.trace.server": "off", //跟踪VSCode和Go语言服务器之间的通信。
+	"go.useCodeSnippetsOnFunctionSuggest": true, //完整的函数及其参数签名，不包括变量类型
+	"go.useCodeSnippetsOnFunctionSuggestWithoutType": false, //完整的函数及其参数签名，不包括变量类型
+	"go.useGoProxyToCheckForToolUpdates": true, //当启用时，扩展会自动检查Go代理是否有Go和Go工具(目前只有gopls)可用的更新，并相应地提示用户
+	"go.useLanguageServer": true, //使用来自谷歌的Go语言服务器"gopls"来支持诸如代码导航、完成、格式化和诊断等语言特性。
+	"go.vetFlags": [],
+	"go.vetOnSave": "package",
+	"[go]": {
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": true
+		},
+		"editor.snippetSuggestions": "inline" //控制代码片段是否与其他建议一起显示及其排列的位置。inline: 在其他建议中穿插显示代码片段建议。
+	},
+	"[go.mod]": {
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": true
+		}
+	},
+	"gopls": {
+		"usePlaceholders": true,
+		"staticcheck": false
+	},
+
+	//
+	//Grunt
+
+	"grunt.autoDetect": "on",
+
+	//
+	//gulp
+
+	"gulp.autoDetect": "on",
+
+	//
+	//HTML
+
+	"html.autoClosingTags": true, //启用/禁用 HTML 标记的自动关闭。
+	"html.format.enable": true, //启用或禁用默认 HTML 格式化程序。
+	"html.format.endWithNewline": true, //以新行结束。
+	"html.format.wrapLineLength": 120,
+	"html.suggest.html5": true, //配置内置 HTML 语言支持是否建议 HTML5 标记、属性和值。
+	"html.trace.server": "off", //跟踪 VS Code 与 HTML 语言服务器之间的通信。
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+
+	//
+	//importCost
+
+	"importCost.bundleSizeDecoration": "both", //显示哪个bundle大小
+	"importCost.debug": false, //启用调试日志记录
+	"importCost.javascriptExtensions": ["\\.jsx?$"], //由Javascript解析器解析的文件扩展名
+	"importCost.mediumPackageSize": 100, //大小上限(以KB为单位)，将一个包视为中型包
+	"importCost.timeout": 10000,
+	"importCost.typescriptExtensions": ["\\.tsx?$"],
+
+	//
+	//jake
+	"jake.autoDetect": "on", //控制是否自动检测 Jake 任务。默认开启。
+
+	//
+	//javascript debugger
+	"debug.javascript.autoAttachFilter": "disabled",
+	"debug.javascript.automaticallyTunnelRemoteServer": true, //在调试远程web应用程序时，配置是否自动将远程服务器隧道到您的本地机器。
+	"debug.javascript.codelens.npmScripts": "top", //在npm脚本中应该显示“运行”和“调试”代码镜头。它可能在“所有”、“脚本”、“脚本”部分的“顶部”或“从不”。
+	"debug.javascript.usePreview": true, //使用新的预览JavaScript调试器为Node.js和Chrome。
+
+	//
+	//JSON
+
+	"json.format.enable": true, //启用或禁用默认 JSON 格式化程序。
+	"json.schemaDownload.enable": true, //启用后，可以从 http 和 https 位置提取 JSON 架构。
+	"json.schemas": [],
+	"json.trace.server": "off", //"json.trace.server": "off"
+
+	//
+	//JSON-zain
+	"JSON-zain.author.ZainChen": "Welcome to vscode-json.",
+	"JSON-zain.json.autorefresh": true, //是否根据json文件内容实时更新菜单!
+
+	//
+	//less
+	"less.completion.completePropertyWithSemicolon": true, //补全CSS属性时在行尾插入分号
+	"less.validate": true, //启用或禁用所有验证。
+
+	//
+	//markdown
+
+	"markdown.links.openLocation": "currentGroup", //控制应在何处打开markdown文件中的链接。
+	"markdown.preview.doubleClickToSwitchToEditor": true,
+	"markdown.preview.fontSize": 16,
+	"markdown.trace": "off",
+
+	//
+	//node debug
+
+	"debug.node.showUseWslIsDeprecatedWarning": true,
+
+	//
+	//npm
+
+	"npm.autoDetect": "on", //控制是否自动检测 npm 脚本。
+	"npm.packageManager": "npm", //用于运行脚本的程序包管理器。
+	"npm.scriptExplorerAction": "open",
+
+	//
+	//path intellisense
+
+	"path-intellisense.absolutePathToWorkspace": true,
+	"path-intellisense.autoSlashAfterDirectory": true,
+
+	//
+	//PHP
+
+	"php.suggest.basic": true, //控制是否启用内置 PHP 语言建议。支持对 PHP 全局变量和变量进行建议。
+	"php.validate.enable": true, //"php.validate.enable": true
+	"php.validate.executablePath": null, //指向 PHP 可执行文件。
+	"php.validate.run": "onSave",
+
+	//
+	//open in browser
+
+	"open-in-browser.default": "chrome", //Set default browser
+
+	//
+	//px-to-rem
+
+	"px-to-rem.notify-if-no-changes": true, //如果无法进行转换，则显示警告。
+	"px-to-rem.number-of-decimals-digits": 4, //一个px或rem可以拥有的最大小数位数。
+	"px-to-rem.only-change-first-ocurrence": false, //将值设置为每次选择只改变第一次出现的px/rem。
+	"px-to-rem.px-per-rem": 16, //每1rem的像素数。
+
+	//
+	//prettier 代码格式化
+
+	"prettier.arrowParens": "always", //当箭头函数仅有一个参数时加上括号
+	"prettier.bracketSpacing": true, //控制对象字面量的空格输出
+	"prettier.disableLanguages": [".go"], //用于禁用此扩展的语言ID列表
+	"prettier.embeddedLanguageFormatting": "auto", //控制是否将更漂亮的格式引用代码嵌入到文件中。
+	"prettier.enable": true, //控制是否启用prettier。
+	"prettier.endOfLine": "crlf",
+	"prettier.htmlWhitespaceSensitivity": "css", //指定HTML文件的全局空白区域敏感度。 有效选项： 'css' - 尊重CSS显示属性的默认值。 'strict' - 空格被认为是敏感的。 'ignore' - 空格被认为是不敏感的。
+	"prettier.jsxBracketSameLine": false, //如果为 true，则将多行jsx元素的 > 放在最后一行的末尾，而不是单独放在下一行
+	"prettier.jsxSingleQuote": true, //在JSX中使用单引号而不是双引号
+	"prettier.packageManager": "npm", //用于安装节点模块的包管理器。
+	"prettier.printWidth": 80, //指定每行代码的最佳长度， 如果超出长度则换行。
+	"prettier.proseWrap": "preserve", //(Markdown）将散文包含在多行中
+	"prettier.requireConfig": false, //需要 prettier configuration 来格式化
+	"prettier.resolveGlobalModules": false, //启用后，如果本地模块无法解析，此扩展将尝试使用全局npm或yarn模块。此设置可能会对性能产生负面影响，特别是在Windows上，当您有附加的网络驱动器时。只有在必须使用全局模块时才启用此功能。
+	"prettier.semi": true, //是否在每行末尾添加分号
+	"prettier.singleQuote": true, //如果为 true，将使用单引号而不是双引号
+	"prettier.tabWidth": 2, //每个制表符占用的空格数
+	"prettier.trailingComma": "es5", //尽可能控制尾随逗号的输出。 有效选项： '无' - 无尾随逗号 ' es5' - 在ES5中有效的尾随逗号（对象，数组等） 'all' - 尾随逗号 尽可能（函数参数）
+	"prettier.useTabs": true, //使用制表符（tab）缩进
+	"prettier.withNodeModules": false, //如果为真，此扩展将处理node_modules中的文件
+
+	//
+	//references search view
+
+	"references.preferredLocation": "peek",
+
+	//
+	//remote SSH
+
+	"remote.SSH.allowLocalServerDownload": true, //如果在主机上下载VSCode服务器失败，则返回到客户机上下载并使用scp将其传输到主机上
+	"remote.SSH.connectTimeout": 15, //指定连接到远程服务器的SSH命令使用的超时(秒)。
+	"remote.SSH.enableAgentForwarding": true, //通过SSH配置选项ForwardAgent启用SSH代理转发。
+	"remote.SSH.enableAzureIntegration": false, //实验:在SSH主机资源管理器中检测以Azure vm为目标的SSH连接。要求您使用Azure帐户扩展登录。
+	"remote.SSH.enableDynamicForwarding": true, //是否使用SSH动态转发来允许在现有SSH连接上设置新的端口隧道。当使用此选项时，每个远程窗口只需要输入一次密码。
+	"remote.SSH.logLevel": "debug", //扩展的日志级别。
+	"remote.SSH.remoteServerListenOnSocket": false, //当为true时，remote VSCode服务器将侦听套接字路径，而不是打开端口。仅对Linux和macOS remotes有效。切换此设置后，运行命令“Kill VS Code Server on Host…”使其生效。需要OpenSSH 6.7 +。禁用“本地服务器”连接多路复用模式。要求为SSH服务器启用AllowStreamLocalForwarding。
+	"remote.SSH.useFlock": true, //是否使用flock在Linux remotes上而不是ln上创建锁文件。默认情况下，我们在Linux remotes上使用flock，在macOS上使用ln。
+	"remote.SSH.useLocalServer": true, //启用使用在窗口之间共享的单个连接和跨窗口重新加载进行连接的模式。这使得打开新窗口的速度更快，并减少了需要输入密码的次数。
+
+	//
+	//SCSS
+
+	"scss.completion.completePropertyWithSemicolon": true, //补全CSS属性时在行尾插入分号
+	"scss.validate": true, //启用或禁用所有验证
+
+	//
+	//stylelint
+
+	"stylelint.config": null,
+	"stylelint.enable": true, //控制是否为CSS/SCSS/Less文件启用stylelint。
+	"stylelint.packageManager": "npm",
+	"stylelint.validate": [
+		//应由stylelint验证的语言id数组。
+		"css",
+		"html",
+		"javascript",
+		"javascriptreact",
+		"less",
+		"markdown",
+		"postcss",
+		"sass",
+		"scss",
+		"source.css.styled",
+		"source.markdown.math",
+		"styled-css",
+		"sugarss",
+		"svelte",
+		"typescript",
+		"typescriptreact",
+		"vue",
+		"vue-html",
+		"vue-postcss",
+		"xml",
+		"xsl"
+	],
+
+	//
+	//typescript  javascript
+
+	"javascript.autoClosingTags": true, //启用/禁用 JSX 标记的自动关闭。
+	"javascript.format.enable": true, //启用/禁用 JavaScript 格式化程序。
+	"javascript.format.semicolons": "ignore", //定义非必要分号的处理方式。要求在工作区内使用 TypeScript 3.7 或更高版本。ignore: 不要插入或删除任何分号。
+	"javascript.preferences.importModuleSpecifier": "auto", //自动 import 语句中路径的首选样式。auto: 自动选择导入路径样式。如果配置了 "baseUrl"，并且相对路径的段少于非相对导入，则首选相对导入。
+	"javascript.preferences.importModuleSpecifierEnding": "index", //自动导入的首选路径结尾。auto: 使用项目设置选择默认值。
+	"typescript.suggest.paths": true, //在 import 语句和 require 调用中，启用或禁用路径建议。
+
+	//
+	//vscode icons设置
+
+	"vsicons.dontShowNewVersionMessage": false //如果设置成'true'，关于新的版本消息将不再显示
+}

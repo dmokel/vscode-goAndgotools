@@ -332,7 +332,7 @@ $
 Module dependencies are automatically downloaded to the pkg/mod subdirectory of the directory indicated by the GOPATH environment variable. The downloaded contents for a given version of a module are shared among all other modules that require that version, so the go command marks those files and directories as read-only. To remove all downloaded modules, you can pass the -modcache flag to go clean:
 ```
 
-模块依赖项自动下载到GOPATH环境变量指定的目录的pkg/mod子目录。模块的给定版本的下载内容在需要该版本的所有其他模块之间共享，因此go命令将这些文件和目录标记为只读。要删除所有下载的模块，你可以通过-modcache标志来清除:
+Module依赖项自动下载到GOPATH环境变量指定的目录的pkg/mod子目录。模块的给定版本的下载内容在需要该版本的所有其他模块之间共享，因此go命令将这些文件和目录标记为只读。要删除所有下载的模块，你可以通过-modcache标志来清除:
 
 ```
 $ go clean -modcache
