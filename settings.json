@@ -11,7 +11,11 @@
 	"editor.autoClosingQuotes": "languageDefined",
 	"editor.autoIndent": "full",
 	"editor.autoSurround": "languageDefined",
-	"editor.codeActionsOnSave": {},
+	"editor.codeActionsOnSave": {
+		//在保存时运行的代码操作类型。不设置时候，默认全部开启
+		"source.organizeImports": true,
+		"source.fixAll": true
+	},
 	"editor.codeLens": true,
 	"editor.fastScrollSensitivity": 5,
 	"editor.lineNumbers": "on",
@@ -381,8 +385,10 @@
 	"git.autorefresh": true,
 	"git.autoRepositoryDetection": true,
 	"git.enabled": true,
+	"git.enableStatusBarSync": true,
 	"git.terminalAuthentication": false,
-
+	"git.untrackedChanges": "separate",
+	"git.useForcePushWithLease": true,
 	//
 	//github
 
